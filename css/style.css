@@ -1,5 +1,5 @@
 /* General styles - put these straight into your stylesheet */
-
+aside, article, section { display: block; }
 body {
   margin: 0;
 }
