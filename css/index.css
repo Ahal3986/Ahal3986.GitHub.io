@@ -4,9 +4,32 @@ html {
     font-family: 'Habibi';
     background-color: #D7D9D9;;
   }
-  body{
+
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column{
+    flex: 20%;
+    padding: 20px;
+
+  }
+  @media only screen and (min-width: 400px ) {
+    .row {
+        flex-direction: column;
+    }
+  }
+  @media only screen and (min-width: 1900px ) {
+    .column {
+        flex-direction:row;
+    }
+  }
+  
+  
+  
+body{
     position: relative;
-    size: auto;
     max-width: 800px;
     margin: 0 auto;
     color: #73655A;
@@ -118,7 +141,8 @@ p{
     position: relative;
   
 
-
+    font-family: 'Habibi';
+    font-style: normal;
     font-size: 1.0em;
 
     color: #73655A ;
