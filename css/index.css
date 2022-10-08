@@ -31,43 +31,21 @@ a:link{
   color: #40372F;
   text-decoration: none;
 }
-a:visited {
-    color:#8DA658;
-    text-decoration: none;
-  }
+
 a:hover {
     color: #40372F;
     text-decoration: none;
   }
-  
+a:visited {
+    color:#8DA658;
+    text-decoration: none;
+  }
 body{
     position: relative;
     max-width: 1900px;
     margin: 3 ;
     color: #8DA658;
     font-size: 15px;}
-
-button{
-  background: #8DA658;
-  border-radius: 100px;
-  font-family: "Habibi";
-  border: 5px solid #40372F;
-  height: 45px;
-  border-radius: 10px;
-  color: #000000;
-  font-size: 20px;
-  transition-duration: 0.5s;
-  text-align: center;
-  }
-
-button:hover{
-    color: black;
-    background-color: #A69C94;
-  }
-button:visited{
-  background:#73655A;
-}
-
 
 
 nav {
@@ -79,7 +57,7 @@ nav {
     text-decoration: none;
       }
 
-      
+     
 h1{
     position:relative;
     text-align: center;
@@ -162,17 +140,8 @@ p{
     font-size: 2vh;
     color: #ffffff ;
   }
-  .headshot{
-    position: relative;
-    margin-left: 100;
-    margin-right: auto;
-    float: left; 
-    opacity: 0.5;
-    display: flex;
-    margin: 0 auto;
   
-  }
-img{
+  img{
     position: absolute;
     opacity: 0.7;
     margin-bottom: 100;
@@ -184,6 +153,17 @@ img{
     padding-bottom: 4em;
   }
 
+  embed{
+    display: flex;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #8DA658;
+    padding: 0;
+    margin: 0;
+  
+  }
 
 hr{
     height: 5px;
@@ -191,31 +171,44 @@ hr{
     background-color: white;
     border-radius: 50%;
 }
+button{
+  background: #8DA658;
+  border-radius: 100px;
+  font-family: "Habibi";
+  border: 5px solid #40372F;
+  height: 45px;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 20px;
+  transition-duration: 0.5s;
+  text-align: center;
+  }
+
+button:hover{
+    color: black;
+    background-color: #A69C94;
+  }
+button:visited{
+  background:#73655A;
+}
+  .headshot{
+    position: relative;
+    margin-left: 100;
+    margin-right: auto;
+    float: left; 
+    opacity: 0.5;
+    display: flex;
+    margin: 0 auto;
+  
+  }
+
 
 .NavBackground{
   background-color: white;
   opacity: 0.9;
 }
 
-embed{
-  display: flex;
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 5px solid #8DA658;
-  padding: 0;
-  margin: 0;
 
-}
-ul{
-  color: white;
-  font-size: 1em;
-}
-li{
-  color: black;
-  font-size: 1em;
-}
 
 .DataProjects {
   position: relative;
@@ -305,3 +298,5 @@ li{
   background-color: #73655A;
   border-radius: 5;
 }
+
+
