@@ -28,22 +28,22 @@ html {
   
 a:link{
   position: relative;
-  color: #40372F;
+  color: black;
   text-decoration: none;
 }
-
+a:visited {
+  color:#8DA658;
+  text-decoration: none;
+}
 a:hover {
     color: #40372F;
     text-decoration: none;
   }
-a:visited {
-    color:#8DA658;
-    text-decoration: none;
-  }
+
 body{
     position: relative;
     max-width: 1900px;
-    margin: 3 ;
+    margin: 2 ;
     color: #8DA658;
     font-size: 15px;}
 
@@ -140,7 +140,14 @@ p{
     font-size: 2vh;
     color: #ffffff ;
   }
-  
+  ul{
+    color: white;
+    font-size: 1em;
+  }
+  li{
+    color: black;
+    font-size: 1em;
+  }
   img{
     position: absolute;
     opacity: 0.7;
@@ -183,14 +190,14 @@ button{
   transition-duration: 0.5s;
   text-align: center;
   }
-
+  button:visited{
+    background:#73655A;
+  }
 button:hover{
     color: black;
     background-color: #A69C94;
   }
-button:visited{
-  background:#73655A;
-}
+
   .headshot{
     position: relative;
     margin-left: 100;
