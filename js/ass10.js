@@ -64,6 +64,7 @@ const json2 =
 console.log(json2)
 // problem3
 
+
 const anna = 
   {
   "FirstName" : "Anna",
@@ -71,9 +72,10 @@ const anna =
   "designation" : "Executive",
   "salary" : 25600,
   "RaisEligible" : false,
-  }
+  };
   
-  json2['employees'].push(anna);
+  json.push(anna)
+  json2['Employees'].push(anna);
   console.log(json2)
 
 // problem4
@@ -118,85 +120,45 @@ const json4 =
 console.log(json4)
 
 let Total = 0;
-for(let i=0; i<json.Employees.length; i++){
+for(let i=0; i<json4.Employees.length; i++){
   Total +=json4.Employees[i]['salary'];
 }
 
-console.log(Total)
+console.log("total salary ",Total)
 
 
 // problem5
 
 for(let i=0; i<json4.Employees.length; i++)
 if (json4.Employees[i]["RaiseEligible"] == true){
-  json4.Employees[i]['salary'] += (json4.Employees[i]["RaiseEligible"]*0.1);
-  json4.Employees[i]["RaiseEligible"] == false;
+  json4.Employees[i]['salary']*=1.1;
+  console.log('salary increased ', json4.Employees[i].salary);
+  json4.Employees[i]["RaiseEligible"] = false;
 }
 
 console.log(json4);
 
-for(let i=0; i<json4.Employees.length; i++){
-  let wfh= false;
-  let name= json4.Employees[i]['first name']
-}
+ 
 
-for(let x =0;x <workingHome.length[j]['first name'];x++)
-{}
-if(wfh==true){
-employees[i]['wfh']=true;}
+// problem6
 
-const json5 = 
-{
-    "companyNAme": "Tech Stars",
-    "website" : "www.techstars.site",
-    "Employees" :[
-{
-  "FirstName" : "Sam",
-  "department" : "Tech",
-  "designation" : "Manager",
-  "salary" : 40000,
-  "RaiseEligible" : true,
-  "WorkingFromHome": true
-},
-{
-    "FirstName" : "Mary",
-    "department" : "Finance",
-    "designation" : "Manager",
-    "salary" : 18500,
-    "RaiseEligible" : true,
-    "WorkingFromHome": false
-},
-{
-    "FirstName" : "Bill",
-    "department" : "HR",
-    "designation" : "Executive",
-    "salary" : 21200,
-    "RaiseEligible" : False,
-    "WorkingFromHome": false
-},
-{
-"FirstName" : "Anna",
-    "department" : "Tech",
-    "designation" : "Executive",
-    "salary" : 25600,
-    "RaiseEligible" : False,
-    "WorkingFromHome": true
-}
-]
-}
-  
+
+
+const workingHome = ['Anna','Sam']
+
 
 for(let i=0;i<4;i++){
 
-let wfh= false;
-if(json5.Employees[i]['firstname']=='Anna'|| json5.Employees[i]['firstname']=='Sam'){
-wfh=true;
+if(json4.Employees[i]['FirstName']=='Anna'|| json4.Employees[i]['FirstName']=='Sam'){
+Object.assign(json4.Employees[i],{
+  wfh: true
+});
+console.log()
 }
 else{
-json5.Employees[i]["Working from Home"]=false;
-}
-  }
-  console.log(json5); 
-// problem5
+Object.assign(json4.Employees[i],{
+  wfh: false
+});
+console.log()
+}}
 
-let workingHome 
