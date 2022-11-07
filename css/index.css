@@ -346,6 +346,45 @@ button {
   left: 2px;
 }
 
+.submit2 {
+  background: #8DA658;
+  border-radius: 100px;
+  font-family: "Habibi";
+  border: 5px solid #40372F;
+  height: 45px;
+  border-radius: 10px;
+  color: #000000;
+  font-size: 20px;
+  transition-duration: 0.5s;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  left: 42px;
+  display: inline-block;
+}
+
+  .quotes {
+    padding: 20px 50px;
+    min-height: 100px;
+    background-color: white;
+  }
+
+  .copyB {
+    background: #8DA658;
+    border-radius: 100px;
+    font-family: "Habibi";
+    border: 5px solid #40372F;
+    height: 45px;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 20px;
+    transition-duration: 0.5s;
+    text-align: center;
+    position: relative;
+    display: inline-block;;
+    top: 200;
+  }
+
 
 
 
