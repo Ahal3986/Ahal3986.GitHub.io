@@ -43,7 +43,7 @@ a:hover {
 body{
     position: relative;
     max-width: 1900px;
-    margin: 2 ;
+    margin: 2px;
     color: #8DA658;
     font-size: 15px;}
 
@@ -132,7 +132,7 @@ h6{
 
 p{
     display: flex;
-    margin: 10 auto;
+    margin: 10px;
     display: block;
     position: relative;
     font-family: 'Habibi';
@@ -152,10 +152,10 @@ p{
 .headshot{
     position: absolute;
     opacity: 0.7;
-    margin-bottom: 100;
+    margin-bottom: 100px;
     height: 400px;
     border-radius: 5%;
-    margin-left: 1;
+    margin-left: 1px;
     padding-left: 6em; 
     padding-right: 6em;
     padding-bottom: 4em;
@@ -204,7 +204,7 @@ hr{
 
   .headshot{
     position: relative;
-    margin-left: 100;
+    margin-left: 100px;
     margin-right: auto;
     float: left; 
     opacity: 0.5;
@@ -225,7 +225,7 @@ hr{
   position: relative;
   height: 300px;
   width: 500px;
-  margin: 1;
+  margin: 1px;
   display: inline-flex;
   margin-bottom: 3cm;
   
@@ -234,7 +234,7 @@ hr{
   position: relative;
   height: 300px;
   width: 500px;
-  margin: 1;
+  margin: 1px;
   display: inline-flex;
   margin-bottom: 3cm;
   
@@ -307,7 +307,7 @@ hr{
 
 .Navhr{
   background-color: #73655A;
-  border-radius: 5;
+  border-radius: 5px;
 }
 
 .full-img {
@@ -369,21 +369,6 @@ button {
     background-color: white;
   }
 
-  .copyB {
-    background: #8DA658;
-    border-radius: 100px;
-    font-family: "Habibi";
-    border: 5px solid #40372F;
-    height: 45px;
-    border-radius: 10px;
-    color: #000000;
-    font-size: 20px;
-    transition-duration: 0.5s;
-    text-align: center;
-    position: relative;
-    display: inline-block;;
-    top: 200;
-  }
 
 
 
