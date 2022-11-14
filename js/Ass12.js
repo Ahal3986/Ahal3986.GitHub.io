@@ -60,8 +60,8 @@ function plus(){
         }*/
 
 function finalNum(){
-    if(numbersOnly == 0){
-        alert("your starter number cannot be 0");
+    if(numbersOnly < 9999){
+        alert("your starter number cannot be less than 9999");
         output.textContent == 0 ;
         location.reload()
     }      
