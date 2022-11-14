@@ -160,3 +160,7 @@ function colorValue(ev) {
     let backColor = `rgb(${r},${g},${b}`
     document.body.style.background = backColor}
 
+    setTimeout(function(){
+        location = ''
+      },60000)
+
