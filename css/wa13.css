@@ -56,15 +56,6 @@ ul {
     }
 }
 
-@media screen and (max-width: 500px) {
-    .left {
-        position: relative;
-        left: 50%;
-        top: 30vh;
-        -webkit-transform: translateX(-50%);
-        transform:translateX(-50%)
-    }
-}
 
 
 .left #headshot {
@@ -185,7 +176,7 @@ ul {
 .card {
     min-height: 100vh;
     position: fixed;
-    top: 0;
+    top: 85;
     left: 550px;
     right: 0;
     min-width:5vw
@@ -201,15 +192,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .card {
-        top: 80vh;
-        position: absolute;
-        left: 0;
-        min-width: 50vw;
-        padding:0 30px;
-    }
-}
+
 
 
 
@@ -394,34 +377,17 @@ ul {
     color: rgba(0,0,0,.4);
 }
 
-/* problem1 */
 @media screen and (orientation:landscape)
 and (min-device-width: 390px) 
-and (max-device-width: 900px) {
+and (max-device-width: 999px) {
     .left {
         position: relative;
     }
         .card {
             position: relative;
-            top: 90vh;
+            top: 150vh;
             left: 0;
 
     }}
-
-    @media screen
-    and (max-device-width: 600px) 
-    and (min-device-height: 600px) 
-    and (-webkit-min-device-pixel-ratio: 2){
-        .left {
-            position: relative;
-            top: 20vw;
-        }
-            .card {
-                position: relative;
-                top: 80vw;
-                left: 0;
-    
-        }}
-    
 
 
