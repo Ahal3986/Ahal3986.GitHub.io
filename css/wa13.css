@@ -1,3 +1,4 @@
+
 body {
     font-size: 14px;
     font-weight: 300;
@@ -129,9 +130,6 @@ ul {
     color:#c8c8c8
 }
 
-.left ul#navi li:nth-child(2) {
-}
-
 .left ul#navi li a:hover {
     color:#800000
 }
@@ -177,18 +175,19 @@ ul {
 
 .card {
     min-height: 100vh;
-    position: absolute;
-    top: 95;
+    position: fixed;
+    top: 85;
     left: 550px;
     right: 0;
-    min-width:600px
+    min-width:5vw
 }
 
 @media screen and (max-width: 1000px) {
     .card {
-        top: 80%;
+        top: 80vh;
+        position: absolute;
         left: 0;
-        min-width: 100vw;
+        min-width: 50vw;
         padding:0 30px;
     }
 }
@@ -390,15 +389,4 @@ and (max-device-width: 999px) {
 
     }}
 
-    @media screen and (max-width:600px)
-and (min-device-width: 390px) 
-and (max-device-width: 600px) {
-    .left {
-        position: relative;
-    }
-        .card {
-            position: relative;
-            top: 150vh;
-            left: 0;
 
-    }}
