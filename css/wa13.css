@@ -383,7 +383,7 @@ and (max-device-width: 600px) {
         transform:translateX(-50%)}
         .card {
             position: relative;
-            top: 80vh;
+            top: 150vh;
             left: 0;
             min-width: 100vw;
             padding:0 30px
