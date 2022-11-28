@@ -185,7 +185,7 @@ ul {
 .card {
     min-height: 100vh;
     position: fixed;
-    top: 85;
+    top: 0;
     left: 550px;
     right: 0;
     min-width:5vw
