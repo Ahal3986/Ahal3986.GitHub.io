@@ -184,7 +184,7 @@ ul {
 
 @media screen and (max-width: 1000px) {
     .card {
-        top: 30px;
+        top: 80vh;
         left: 0;
         min-width: 100vw;
         padding:0 30px
@@ -377,15 +377,15 @@ and (min-device-width: 400px)
 and (max-device-width: 600px) {
     .left {
         position: relative;
-        left: 100%;
+        left: 50%;
         top: 30px;
         -webkit-transform: translateX(-50%);
         transform:translateX(-50%)}
-    .card {
-        position: relative;
-        top: 50vh;
-        left: 0;
-        min-width: 100vw;
-        padding:0 30px
+        .card {
+            position: relative;
+            top: 150vh;
+            left: 0;
+            min-width: 100vw;
+            padding:0 30px
     }}
 
