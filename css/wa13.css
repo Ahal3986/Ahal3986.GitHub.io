@@ -191,13 +191,13 @@ ul {
         padding:0 30px;
     }
 }
-@media screen and (max-width: 600px) and (min-height: 600px){
+@media screen and (max-width: 600px) and (min-height: 600px) and (-webkit-device-pixel-ratio : 2){
     .card {
         top: 85vh;
         position: absolute;
         left: 0;
         min-width: 20vw;
-        padding:0 30px;
+        padding:0 10vw;
     }
     .left{
         top: 100;
