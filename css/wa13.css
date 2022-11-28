@@ -377,4 +377,28 @@ ul {
     color: rgba(0,0,0,.4);
 }
 
+@media screen and (orientation:landscape)
+and (min-device-width: 390px) 
+and (max-device-width: 800px) {
+    .left {
+        position: relative;
+    }
+        .card {
+            position: relative;
+            top: 150vh;
+            left: 0;
 
+    }}
+
+    @media screen and (max-width: 600px) and (min-height: 600px) and (-webkit-device-pixel-ratio : 2){
+        .card {
+            top:700px;
+            position: absolute;
+
+        }
+        .left{
+            top: 150;
+            position: absolute;
+            
+        }
+    }
