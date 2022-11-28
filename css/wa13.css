@@ -200,7 +200,9 @@ ul {
         padding:0 10vw;
     }
     .left{
-        top: 100;
+        top: 150;
+        position: absolute;
+        
     }
 }
 
