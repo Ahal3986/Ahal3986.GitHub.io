@@ -396,7 +396,7 @@ ul {
 
 @media screen and (orientation:landscape)
 and (min-device-width: 390px) 
-and (max-device-width: 999px) {
+and (max-device-width: 900px) {
     .left {
         position: relative;
     }
@@ -406,5 +406,19 @@ and (max-device-width: 999px) {
             left: 0;
 
     }}
+
+    @media screen
+    and (max-device-width: 500px) 
+    and (-webkit-min-device-pixel-ratio: 2){
+        .left {
+            position: relative;
+        }
+            .card {
+                position: relative;
+                top: 0;
+                left: 0;
+    
+        }}
+    
 
 
