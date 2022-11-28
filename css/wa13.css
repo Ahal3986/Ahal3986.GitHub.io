@@ -184,14 +184,25 @@ ul {
 
 @media screen and (max-width: 1000px) {
     .card {
-        top: 80vh;
+        top: 85vh;
         position: absolute;
         left: 0;
         min-width: 50vw;
         padding:0 30px;
     }
 }
-
+@media screen and (max-width: 600px) and (min-height: 600px){
+    .card {
+        top: 85vh;
+        position: absolute;
+        left: 0;
+        min-width: 20vw;
+        padding:0 30px;
+    }
+    .left{
+        top: 100;
+    }
+}
 
 
 
