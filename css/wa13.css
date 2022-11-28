@@ -55,6 +55,8 @@ ul {
     }
 }
 
+
+
 .left #headshot {
     position: relative;
     overflow: hidden;
@@ -176,7 +178,7 @@ ul {
 .card {
     min-height: 100vh;
     position: absolute;
-    top: 0;
+    top: 95;
     left: 550px;
     right: 0;
     min-width:600px
@@ -184,12 +186,15 @@ ul {
 
 @media screen and (max-width: 1000px) {
     .card {
-        top: 80vh;
+        top: 80%;
         left: 0;
         min-width: 100vw;
-        padding:0 30px
+        padding:0 30px;
     }
 }
+
+
+
 
 .line {
     height: 1px;
@@ -382,5 +387,18 @@ and (max-device-width: 999px) {
             position: relative;
             top: 150vh;
             left: 0;
+
     }}
 
+    @media screen and (max-width:600px)
+and (min-device-width: 390px) 
+and (max-device-width: 600px) {
+    .left {
+        position: relative;
+    }
+        .card {
+            position: relative;
+            top: 150vh;
+            left: 0;
+
+    }}
