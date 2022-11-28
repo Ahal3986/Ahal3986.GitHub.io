@@ -193,7 +193,7 @@ ul {
 }
 @media screen and (max-width: 600px) and (min-height: 600px) and (-webkit-device-pixel-ratio : 2){
     .card {
-        top: 85vh;
+        top:700px;
         position: absolute;
         left: 0;
         min-width: 20vw;
