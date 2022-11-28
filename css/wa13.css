@@ -394,6 +394,7 @@ ul {
     color: rgba(0,0,0,.4);
 }
 
+/* problem1 */
 @media screen and (orientation:landscape)
 and (min-device-width: 390px) 
 and (max-device-width: 900px) {
@@ -402,7 +403,7 @@ and (max-device-width: 900px) {
     }
         .card {
             position: relative;
-            top: 150vh;
+            top: 90vh;
             left: 0;
 
     }}
