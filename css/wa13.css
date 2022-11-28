@@ -408,14 +408,16 @@ and (max-device-width: 900px) {
     }}
 
     @media screen
-    and (max-device-width: 500px) 
+    and (max-device-width: 600px) 
+    and (min-device-height: 600px) 
     and (-webkit-min-device-pixel-ratio: 2){
         .left {
             position: relative;
+            top: 20vw;
         }
             .card {
                 position: relative;
-                top: 0;
+                top: 80vw;
                 left: 0;
     
         }}
