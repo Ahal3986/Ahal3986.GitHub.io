@@ -377,7 +377,6 @@ and (min-device-width: 400px)
 and (max-device-width: 600px) {
     .left {
         position: relative;
-        left: 50%;
         top: 30px;
         -webkit-transform: translateX(-50%);
         transform:translateX(-50%)}
