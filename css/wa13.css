@@ -382,7 +382,5 @@ and (max-device-width: 999px) {
             position: relative;
             top: 150vh;
             left: 0;
-            min-width: 100vw;
-            padding:0 30px
     }}
 
