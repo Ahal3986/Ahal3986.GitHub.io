@@ -397,8 +397,8 @@ and (max-device-width: 800px) {
 
         }
         .left{
-            top: 150;
-            position: absolute;
+            top: 70;
+            position: relative;
             
         }
     }
