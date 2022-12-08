@@ -1,0 +1,33 @@
+html {
+    display: table;
+    margin:0 auto;
+    top: 4px;
+}
+*   {
+    margin:0;
+    padding:0;
+    }
+
+
+button{
+    font-size: large;
+    cursor: pointer;
+    border-color: green;
+    margin: 15; /* Space from this element (entire page) and others*/
+    padding: 15; /*space from content and border*/
+    justify-content: center;
+    align-content: center;
+}
+
+body{
+    bottom: 4px;
+    border-radius: 4;
+    border-color: black;
+    margin: 0; /* Space from this element (entire page) and others*/
+    padding: 10px; /*space from content and border*/
+    border: solid green;
+    border-width: thick;
+    overflow:hidden;
+    display:block;
+    top: 100px;
+}

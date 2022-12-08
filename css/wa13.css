@@ -390,7 +390,8 @@ and (max-device-width: 800px) {
 
     }}
 
-    @media screen and (max-width: 600px) and (min-height: 600px) and (-webkit-device-pixel-ratio : 2){
+    @media screen and (max-width: 600px) and (min-height: 600px) and (-webkit-device-pixel-ratio : 2) 
+    and (orientation:portrait){§
         .card {
             top:700px;
             position: absolute;
