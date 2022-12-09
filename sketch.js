@@ -49,6 +49,8 @@ function reloadP(){
   window.location.reload()
 }
 
+
+
 function setup() {
   
   let cnv = createCanvas(canvasSize, canvasSize);
@@ -62,7 +64,7 @@ function setup() {
   cnv.style("color","#ff0000");
   
 
-
+  
 
 
 
@@ -70,7 +72,6 @@ function setup() {
   cellSize = canvasSize / boardSize;
 
   Grid = randomLevel.map(dataRow => dataRow.split(""));
-
   //head//
   for (let y=0; y <randomLevel.length; y++){
     let headX = randomLevel[y].indexOf("2");
@@ -109,10 +110,11 @@ function setup() {
   } 
   function startMoving(velocity){
     //allows animation to end before direction can be changed //
-
     if (animationTimer > 0) return;
 
     let[nextX,nextY] = nextPosition(velocity);
+
+    // creating grid edges block wouldnt move outside the grid //
 
     const xbound = nextX >= 0 && nextX < boardSize;
     const ybound = nextY >= 0 && nextY < boardSize;
@@ -130,7 +132,6 @@ function setup() {
     }
 
 
-
   }
 
 
@@ -143,16 +144,22 @@ function setup() {
   }
   function nextPosition(velocity){
     let finalPosition;
+
+    
     // current position plus direction gives you next position //
     return finalPosition = [
       headPosition[0] + velocity[0],
       headPosition[1] + velocity[1] 
-    ];
+    ]
+    
+    ;
+  
 
   }
   function stopMoving(){
     headPosition = nextPosition(directionNextPosition);
     Grid[headPosition[1]][headPosition[0]] = "2";
+  
     
 
     if (checkWin()){
@@ -173,6 +180,10 @@ function setup() {
     return !Grid.flat(1).includes("1");
   }
   function checkLoss(){
+    headPosition = nextPosition(directionNextPosition)
+    if(Grid[headPosition[1]][headPosition[0]] === "2"){
+
+    }
   }
 
 
@@ -188,7 +199,7 @@ function createBoard(){
       }
 
       else if(cellData === "1"){
-        fill("#042326");
+        fill("#8DA658");
       }
       
       else{
@@ -221,14 +232,28 @@ function movingAndHeadImage(){
 }}
 
 
+function keyPressed(){
+  if (keyCode === UP_ARROW){
+  startMoving([0,-1]);}
+  
+  if (keyCode === DOWN_ARROW){
+    startMoving([0,1]);}
+  
+  if (keyCode === LEFT_ARROW) startMoving([-1,0]);
+  
+  if (keyCode === RIGHT_ARROW) startMoving([1,0]);
+  
+  }
+
+
 function draw(){
-  background(20);
+  updateMoving()
 
   createBoard()
 
   movingAndHeadImage()
 
-  updateMoving()
+
 
     
   }
