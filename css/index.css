@@ -19,6 +19,30 @@ html {
     .row {
         flex-direction: column;
     }
+    .DataProjects {
+      border:5px solid #8DA658;
+      padding: 10px;
+      width: 90%;
+      height: 905;
+      display: inline-block;
+      margin: 30px ;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .DesProjects {
+    
+      border:5px solid #8DA658;
+      padding: 5px;
+      width: 600px;
+      height: 600px;
+      display: inline-block;
+      margin: 30px ;
+      text-align: center;
+      resize: vertical;
+      position: relative;
+    
+    }
   }
 @media only screen and (min-width: 1900px ) {
     .column {
@@ -276,7 +300,7 @@ hr{
   border:5px solid #40372F;
   border-radius: 0;
   padding: 0;
-  margin: 10px;
+  margin: 0 auto;
   height: 400px;
   width: 400px;
 }
@@ -337,17 +361,11 @@ hr{
   cursor: pointer;
 }
 
-button {
-  border: 0;
-  position: relative;
-  cursor:pointer;
-
-}
 
 .submit2 {
   background: #8DA658;
   border-radius: 100px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: 5px solid #40372F;
   height: 45px;
   border-radius: 10px;

@@ -87,17 +87,18 @@ function setup() {
     [0, -1],
     [0, 1]
   ];
+
   //button//
   ["←", "→", "↑", "↓"].forEach(makeControl);
   //creating buttons to control main block//
   function makeControl(direction, index){
     buttons[index] = createButton(direction);
     buttons[index].position(650,0, "relative")
-    buttons[index].addClass('p5Buttons');
+    ;
   
     buttons[index].mousePressed(function(){
       startMoving(directionss[index])
-    
+      buttons[index].addClass('p5Buttons')
 
     })
     }
