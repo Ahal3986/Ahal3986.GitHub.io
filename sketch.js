@@ -92,6 +92,7 @@ function setup() {
   //creating buttons to control main block//
   function makeControl(direction, index){
     buttons[index] = createButton(direction);
+    buttons[index].position(650,0, "relative")
     buttons[index].addClass('p5Buttons');
   
     buttons[index].mousePressed(function(){
