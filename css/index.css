@@ -28,7 +28,6 @@ html {
       margin: 30px ;
       text-align: center;
       position: relative;
-      overflow: hidden;
     }
     .DesProjects {
     
@@ -273,13 +272,14 @@ hr{
 
 }
 
+
 .DataProjDesc{
   position: relative ;
   background: #8DA658 ;
   padding: 10px;
   margin: 7px;
   opacity: 1;
-  display: grid;
+  display: flex;
   height:fit-content ;
   text-align: left;
 }
@@ -290,7 +290,7 @@ hr{
   margin: 1px;
   opacity: 1;
   top: 2%;
-  display: grid;
+  display: flex;
   height:fit-content ;
   text-align: left;
 }
@@ -386,11 +386,11 @@ hr{
  
 }
 
-
-#bodyGame{
-  top: 20%;
-  padding-left: 10px ;
+.p5Buttons{
+  display: contents;
+  font-size: 150px;
 }
+
 
 .resetButton{
   background: #8DA658;
@@ -405,7 +405,6 @@ hr{
   text-align: center;
   position: relative;
   font-size: 12px;
-  left: 80%;
   top:10%;
 }
 
@@ -415,18 +414,32 @@ hr{
   background-color: black;
   padding: 10px;
   font-size: 12px;
-  left: 80%;
   top: 10%;
   align-content: center;
   justify-content: center;
 }
 
-.canvas{
- margin: 0 auto; 
- padding: 10px;
- justify-content: center;
+.insructions{
+  right: 20%;
+  top: 40%;
+  position:relative;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size:  6vh;
+  color: #8DA658;
+  line-break:strict;
+}
 
- align-items: center;
+.instructionsDesc{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 100px;
+  color: #000000;
+  font-size: 20px;
+  position: relative;
+  font-size: 12px;
+  text-align: left;
 }
 
 

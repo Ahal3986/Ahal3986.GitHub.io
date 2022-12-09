@@ -1,4 +1,4 @@
-let canvasSize = 450;
+let canvasSize = 400;
 let level_shape = [[
  
   "1101110",
@@ -52,9 +52,14 @@ function reloadP(){
 function setup() {
   
   let cnv = createCanvas(canvasSize, canvasSize);
-  cnv.style('display', 'flex');
   background(255, 0, 200);
   cnv.addClass("canvas")
+
+  cnv.style('width', 'height');
+    
+    // Set font-size of input text
+  cnv.style('font-size', '20px');
+  cnv.style("color","#ff0000");
   
 
 
@@ -93,12 +98,11 @@ function setup() {
   //creating buttons to control main block//
   function makeControl(direction, index){
     buttons[index] = createButton(direction);
-    buttons[index].position(650,0, "relative")
-    ;
+    buttons[index].addClass('p5Buttons');
   
     buttons[index].mousePressed(function(){
       startMoving(directionss[index])
-      buttons[index].addClass('p5Buttons')
+      
 
     })
     }
