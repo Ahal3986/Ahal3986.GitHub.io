@@ -39,10 +39,15 @@ html {
       margin: 30px ;
       text-align: center;
       resize: vertical;
-      position: relative;
-    
+      position: relative;}
+    .p5Buttons{
+        position: relative;
+        display: contents;
+        margin: 0 auto;
+      
+      }
     }
-  }
+  
 @media only screen and (min-width: 1900px ) {
     .column {
         flex-direction:row;
@@ -230,7 +235,7 @@ hr{
     margin-right: auto;
     float: left; 
     opacity: 0.5;
-    display: flexbox;
+    display: flex;
     margin: 0 auto;
   
   }
@@ -244,7 +249,7 @@ hr{
 .projectTitle{
   text-align: center;
   font-size: 5vh;
-  margin: 50;
+  margin: 0 auto;
 }
 
 .DataProjects {
@@ -319,7 +324,7 @@ hr{
   padding-bottom: 4em;
 }
 
-#input{
+.input{
   position: relative;
   background: #D7D9D9;
   border: 5px solid #40372F;
@@ -395,7 +400,7 @@ hr{
 
 .p5Buttons{
   position: relative;
-  display: content;
+  display: contents;
   margin: 0 auto;
   visibility: hidden;
 
