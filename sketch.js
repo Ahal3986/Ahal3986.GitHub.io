@@ -1,21 +1,5 @@
-let canvasSize = 400;
-let level_shape = [[
- 
-  "1101110",
-  "1111011",
-  "1011111",
-  "1110121",
-  "0110111",
-  "0111111",
-  "0111111",],
-  
-  ["1110111",
-  "1010121",
-  "1111111",
-  "0111111",
-  "1111101",
-  "1000111",
-  "1111111",],
+let canvasSize = 360;
+let level_shape = [
   
   ["1111111",
   "1111121",
@@ -27,13 +11,13 @@ let level_shape = [[
 
 randomLevel = level_shape[Math.floor(Math.random() * level_shape.length)];
 
-
+let grid2d;
 imageURL = "/JJ.png"
 meURL = "/me.png"
 let Grid;
 let headPosition = [];
 //number of frames to complete animation//
-let animationTime = 15;
+let animationTime = 1;
 //tracks animation frames //
 let animationTimer = 0;
 let directionNextPosition;
@@ -57,11 +41,7 @@ function setup() {
   background(255, 0, 200);
   cnv.addClass("canvas")
 
-  cnv.style('width', 'height');
-    
-    // Set font-size of input text
-  cnv.style('font-size', '20px');
-  cnv.style("color","#ff0000");
+
   
 
   
@@ -113,6 +93,7 @@ function setup() {
     if (animationTimer > 0) return;
 
     let[nextX,nextY] = nextPosition(velocity);
+    grid2d= Grid.flat(1)
 
     // creating grid edges block wouldnt move outside the grid //
 
@@ -129,9 +110,10 @@ function setup() {
     if (Grid[nextY][nextX] === "1"){
       directionNextPosition = velocity;
       animationTimer = animationTime
+      console.log(animationTimer)
     }
 
-
+    
   }
 
 
@@ -158,17 +140,21 @@ function setup() {
   }
   function stopMoving(){
     headPosition = nextPosition(directionNextPosition);
-    Grid[headPosition[1]][headPosition[0]] = "2";
-  
-    
+    Grid[headPosition[1]][headPosition[0]] = "2";;
+    console.log(grid2d)
+   // if (){
+     // alert("Congrats! You lost!");}
 
     if (checkWin()){
      alert("Congrats! You WON!");
     location.reload()}
 
-    
-    
-    
+  
+    if (checkLoss()){
+      alert("Congrats! You Lost!");
+     location.reload()}
+      
+  
 
 
     // keeps moving with one click instead of having to move every block // 
@@ -179,13 +165,11 @@ function setup() {
   function checkWin(){
     return !Grid.flat(1).includes("1");
   }
+
   function checkLoss(){
-    headPosition = nextPosition(directionNextPosition)
-    if(Grid[headPosition[1]][headPosition[0]] === "2"){
-
-    }
-  }
-
+  if( grid2d === ['1', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '1', '1', '1', '1', '1', '2', '2', '0', '1', '0', '0', '1', '2', '2', '1', '1', '0', '0', '1', '2', '2', '1', '1', '1', '1', '1', '2', '2', '2', '2', '2', '2', '2', '2']){
+    alert("u lost")
+      }}
 
 
 
@@ -232,6 +216,7 @@ function movingAndHeadImage(){
 }}
 
 
+
 function keyPressed(){
   if (keyCode === UP_ARROW){
   startMoving([0,-1]);}
@@ -244,7 +229,13 @@ function keyPressed(){
   if (keyCode === RIGHT_ARROW) startMoving([1,0]);
   
   }
-
+  function windowResized() { 
+    if(windowWidth < 550) {
+        size = 10;
+    } else {
+        size = 100;
+    }
+}
 
 function draw(){
   updateMoving()
@@ -252,8 +243,5 @@ function draw(){
   createBoard()
 
   movingAndHeadImage()
-
-
-
     
   }
